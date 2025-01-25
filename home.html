@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasty Tales-web page</title>
+    <link rel="stylesheet" href="home.css.css">
+    <link rel="stylesheet" href="home.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="logo">~Tasty Tales~</a>
+            
+        </div>
+        <nav class="nav-bar flex">
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="create recipe.html">Create Recipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li>
+                    <button id="search-icon" class="search-icon">🔍</button>
+                  </li><br>
+                <li><button type="button" class="btn-sign-in"><a href="Sign In.html">Sign In</a></button></li>
+                <li><button type="button" class="btn-sign-up"><a href="sign up.html">Sign Up</a></button></li>
+            </ul>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars" aria-label="menu"></div>
+    </header>
+    <div id="search-bar-container" class="hidden">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button id="search-btn">Search</button>
+      </div>
+       
+    <div class="welcome">
+        <div class="content">
+            <br></br>
+            <h1>Welcome To Digital Recipe Book</h1>
+            
+            <div class="go-to-recipe"><button type="go to recipe" class="go-to-recipe"><a href="recipe.html">Go To Recipe</a></button></div>
+        </div>
+    </div>
+    <br>
+    <h2>Welcome to Tasty Tales-Your Culinary Companion!!</h2>
+    </br>
+    
+    <footer class="footer">
+        <div class="Container">
+            <div class="footer-row">
+                <img src="c:\Users\User\Pictures\Saved Pictures\tasty logo.jfif" alt="Logo" class="footer-image">
+                <div class="foot">
+                    <h2>Contact</h2>
+                    <ul class="info">
+                        <li>
+                            <p>
+                                <span><i class="fa-solid fa-phone"></i></span><br>
+                                <a href="tel:+94761234789">+94 76 123 4789</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span><i class="fa-solid fa-envelope"></i></span><br>
+                                <a href="mailto:tastytales@gmail.com">tastytales@gmail.com</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="footer-icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    </br>
+    <div class="copyrightText">
+        <p>© 2024 Your website. All rights reserved</p>
+    </div>
+    <script>
+        const searchIcon = document.getElementById("search-icon");
+       const searchBarContainer = document.getElementById("search-bar-container");
+       const searchBtn = document.getElementById("search-btn");
+       const searchBar = document.getElementById("search-bar");
+   
+      
+       searchIcon.addEventListener("click", () => {
+         searchBarContainer.classList.toggle("hidden");
+         if (!searchBarContainer.classList.contains("hidden")) {
+           searchBar.focus(); 
+         }
+       });
+   </script>
+   <script>src="home.js"</script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: peachpuff;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: lightpink;
+    border: 1px solid;
+    box-shadow:palevioletred ;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color:brown;
+    margin-right: 20px;
+    padding: 20px 18px;
+    margin: 10px;
+    transition: 0.2s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: indigo;
+    font-size: 18px;
+    padding: 8px 10px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.nav-bar ul li:hover a {
+    background-color: lightgray;
+    color: darkblue;
+    cursor: pointer;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white-color);
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    #menu-btn{
+        display: block;
+    }
+    nav-bar ul{
+        position: absolute;
+        top:100%;
+        right:0;
+        flex-direction: column;
+        background: var(--primary-color);
+        width: 100px;
+        display: none;
+
+    }
+}   
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .search-icon:hover {
+    color: #900;
+  }
+  
+ 
+  #search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8d5e0;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    width: 90%;
+    top: 40px; 
+  }
+  
+  #search-bar-container.hidden {
+    display: none; 
+  }
+  
+  #search-bar {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  #search-btn {
+    padding: 10px 10px;
+    background-color: #900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #search-btn:hover {
+    background-color: #700;
+  }
+  
+ 
+
+.nav-bar .btn-sign-in,.btn-sign-up {
+    margin-left: 20px;
+    background-color: rgb(34, 26, 1);
+    color: azure;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0px;
+    background-image: url(https://i.pinimg.com/736x/f9/fd/6c/f9fd6c40ceeb411da49a1fe80c54eba5.jpg);
+    
+    background-position: center;
+    background-size: cover;
+    background-color:lightpink;
+
+}
+
+.welcome .content{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome h1{
+    font-size: 62px;
+    align-items: center;
+    color:rgb(208, 241, 19);
+    line-height: 1.5;
+}
+
+.welcome h1 image{
+    display:block;
+    height: auto;
+    max-width:100%;
+    border-radius: 10px;
+}
+
+.go-to-recipe{
+    position: relative;
+    top: 100px;
+}
+.go-to-recipe button{
+    float: right;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 0px;
+    background: lightgrey;
+    font-size: 17px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.btn-go-to-recipe:hover {
+    background-color: lightgray;
+    color: rgb(1, 1, 23);
+    border: 2px solid black;
+}
+
+.welcome h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(9, 9, 3);
+    line-height: 1.5;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot {
+    display: table-cell;
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.foot h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align:center;
+}
+
+.foot ul {
+    list-style: none;
+    text-decoration:none ;
+    padding: 0;
+}
+
+.foot ul li a {
+    color: #555;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+}
+
+.foot ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-image  {
+    max-width: 170px;
+    height: 170px;
+    border-radius: 8px;
+
+}
+
+.footer-icons ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-icons ul li a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.footer-icons ul li a:hover {
+    background-color:white;
+}
+
+.footer-icons ul li a i {
+    font-size: 18px;
+    color: white;
+}
+
+.copyrightText {
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .foot {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    .sign-up input[type=text],
+    .sign-up input[type=password] {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .btn-sign-up {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    p {
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .footer-image {
+        max-width: 120px;
+    }
+}

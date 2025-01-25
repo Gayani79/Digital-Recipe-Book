@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasty Tales-web page</title>
+        <link rel="stylesheet" href="create.css.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
+    
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <a href="#" class="logo">~Tasty Tales~</a>
+                    
+                    
+                </div>
+                <nav class="nav-bar flex">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="recipe.html">Recipes</a></li> 
+                        <li><a href="/">Create Recipe</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li>
+                            <button id="search-icon" class="search-icon">🔍</button>
+                          </li><br>
+                        <li class="profile"><a href="profile.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                    </ul>
+                </nav>
+                <div id="menu-btn" class="fas fa-bars" aria-label="menu"></div>
+            </header>
+            <div id="search-bar-container" class="hidden">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-btn">Search</button>
+              </div>
+            <div class="create">
+                <h1>Create Your Own Recipes</h1>
+            </div>
+            <div class="uploaded">
+                <form action="#" method="post">
+        
+                <input type="file" id="image_input" accept="image/*">
+                <div id="display_image"></div>
+        
+        
+            <p> Recipe Name:
+                <input type="text" placeholder="Recipe name..." name="Username" required>
+            </p><br>
+            <label for="Categories">Choose a category:</label>
+        
+            <select name="Category" id="Categories" required>
+                <option value="" disabled selected>Select category</option>
+                <option value="category 1">category 1</option>
+                <option value="category 2">category 2</option>
+                <option value="category 3">category 3</option>
+                <option value="category 4">category 4</option>
+                <option value="category 5">category 5</option>
+                <option value="category 6">category 6</option>
+              
+            </select><br>
+        <br>
+            <p>Ingredients:</p>
+                    <textarea id="ingredients" name="ingredients" rows="5" cols="50" placeholder="Add ingredients..." required></textarea><br><br>
+        
+                    <p>Preparation Method:</p>
+                    <textarea id="Preparation Method" name="Preparation Method" rows="10" cols="50" placeholder="How to make..." required></textarea><br><br>
+        
+           
+                <button type="submit">Submit Recipe</button>
+                </form>
+        
+        </div>
+            <footer class="footer">
+                <div class="Container">
+                    <div class="footer-row">
+                        <img src="c:\Users\User\Pictures\Saved Pictures\tasty logo.jfif" alt="Logo" class="footer-image">
+                        <div class="foot">
+                            <h3>Contact</h3>
+                            <ul class="info">
+                                <li><p>
+                                    <span><i class="fa-solid fa-phone"></i></span><br>
+                                    <a href="tel:+94761234789">+94 76 123 4789</a></p>
+                                </li>
+                                <li><p>
+                                    <span><i class="fa-solid fa-envelope"></i></span><br>
+                                    <a href="mailto:tastytales@gmail.com">tastytales@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="foot">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Refund Policy</a></li>
+                                <li><a href="">Cookie Policy</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="footer-icons">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <br>
+            <div class="copyrightText">
+                <p>© 2024 Your website. All rights reserved</p>
+            </div>
+            <script>
+                const searchIcon = document.getElementById("search-icon");
+        const searchBarContainer = document.getElementById("search-bar-container");
+        const searchBtn = document.getElementById("search-btn");
+        const searchBar = document.getElementById("search-bar");
+        
+        
+        searchIcon.addEventListener("click", () => {
+          searchBarContainer.classList.toggle("hidden");
+          if (!searchBarContainer.classList.contains("hidden")) {
+            searchBar.focus(); 
+          }
+        });
+        </script>
+        </body>
+        
+        </html>
