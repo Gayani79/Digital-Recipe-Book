@@ -1,0 +1,68 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('https://media.istockphoto.com/id/1366752471/photo/assorted-of-tapas-snacks-summer-buffet-food-party.jpg?s=612x612&w=0&k=20&c=4XQwl4m8SNKQt9Flo_spaDXbv_qOLqd55bIQzC4GmGw=');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 10vh;
+}
+.login-header {
+    background: linear-gradient(135deg, #FF7676 0%, #F54EA2 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.login-form {
+    padding: 30px;
+}
+.btn-login {
+    background: linear-gradient(135deg, #FF7676 0%, #F54EA2 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
+.form-control:focus {
+    border-color: #F54EA2;
+    box-shadow: 0 0 0 0.2rem rgba(245, 78, 162, 0.25);
+}
+.login-icon {
+    font-size: 4rem;
+    color: #F54EA2;
+}
+.input-group-text {
+    background-color: transparent;
+    border-right: none;
+}
+.form-control {
+    border-left: none;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #F54EA2;
+    text-decoration: none;
+}
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link a {
+    color: #F54EA2;
+    text-decoration: none;
+    font-weight: bold;
+}

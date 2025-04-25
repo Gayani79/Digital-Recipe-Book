@@ -1,0 +1,62 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('https://media.istockphoto.com/id/1366752471/photo/assorted-of-tapas-snacks-summer-buffet-food-party.jpg?s=2048x2048&w=is&k=20&c=qb3HJzVImqLSKXXVk2NH0076AESwH7vUirmwUO5hMsg=');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.register-header {
+    background: linear-gradient(135deg, #FF7676 0%, #F54EA2 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.register-form {
+    padding: 30px;
+}
+.btn-register {
+    background: linear-gradient(135deg, #FF7676 0%, #F54EA2 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
+.form-control:focus {
+    border-color: #F54EA2;
+    box-shadow: 0 0 0 0.2rem rgba(245, 78, 162, 0.25);
+}
+.register-icon {
+    font-size: 4rem;
+    color: #F54EA2;
+}
+.input-group-text {
+    background-color: transparent;
+    border-right: none;
+}
+.form-control {
+    border-left: none;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.login-link a {
+    color: #F54EA2;
+    text-decoration: none;
+    font-weight: bold;
+}
